@@ -1,0 +1,15 @@
+html {
+  font-family: helvetica;
+  background-color: #95a5a6;
+}
+h1 {
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+.container {
+  background-color: #e74c3c;
+  width: 1000px;
+  height: 500px;
+  margin: 0 auto;
+}
