@@ -130,3 +130,14 @@ img {
   grid-area: footer;
 }
 /*Final grid areas*/
+
+.grid-flow {
+  display: grid;
+  /*Grid de 5CX4R*/
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 150px);
+  /*Grid-auto-flow le da fluides a la grilla*/
+  grid-auto-flow: row;
+  /*grid-auto-flow: column;*/
+  grid-auto-rows: auto;
+}
