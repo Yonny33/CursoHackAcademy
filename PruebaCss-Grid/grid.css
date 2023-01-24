@@ -172,27 +172,27 @@ img {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
 }
-.grid-layers .item:nth-child(1){
+.grid-layers .item:nth-child(1) {
   background-color: yellow;
   grid-column: 1/3;
   grid-row: 1/3;
 }
-.grid-layers .item:nth-child(2){
+.grid-layers .item:nth-child(2) {
   background-color: pink;
   grid-column: 3/5;
   grid-row: 1/3;
 }
-.grid-layers .item:nth-child(3){
+.grid-layers .item:nth-child(3) {
   background-color: blue;
   grid-column: 1/3;
   grid-row: 3/5;
 }
-.grid-layers .item:nth-child(4){
+.grid-layers .item:nth-child(4) {
   background-color: orange;
   grid-column: 3/5;
   grid-row: 3/5;
 }
-.grid-layers .item:nth-child(5){
+.grid-layers .item:nth-child(5) {
   background-color: mediumorchid;
   grid-column: 2/4;
   grid-row: 2/4;
@@ -200,34 +200,50 @@ img {
 /*Grid con capas ubicando con linias*/
 
 /*Default es 0, valores nagativos y pasitivos*/
-.grid-order{
+.grid-order {
   display: grid;
   /*Grid de 3CX2R*/
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
 }
-.grid-order .item:nth-child(1){
-  background-color:  red;
+.grid-order .item:nth-child(1) {
+  background-color: red;
   order: 1;
 }
-.grid-order .item:nth-child(2){
-  background-color:  purple;
+.grid-order .item:nth-child(2) {
+  background-color: purple;
+  order: 2;
 }
-.grid-order .item:nth-child(3){
-  background-color:  blue;
+.grid-order .item:nth-child(3) {
+  background-color: blue;
 }
-.grid-order .item:nth-child(4){
-  background-color:  orange;
+.grid-order .item:nth-child(4) {
+  background-color: orange;
 }
-.grid-order .item:nth-child(5){
-  background-color:  palevioletred;
+.grid-order .item:nth-child(5) {
+  background-color: palevioletred;
 }
 /*Default es 0, valores nagativos y pasitivos*/
 
+.grid-align {
+  display: grid;
+  /*Grid de 3CX2R*/
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(2, 200px);
+}
+  .grid-align .item:nth-child(1) {
+    background-color: yellow;
+  }
 
-
-
-
-
-
-
+  .grid-align .item:nth-child(2) {
+    background-color: red;
+  }
+  .grid-align .item:nth-child(3) {
+    background-color: blue;
+  }
+  .grid-align .item:nth-child(4) {
+    background-color: orange;
+  }
+  .grid-align .item:nth-child(5) {
+    background-color: palevioletred;
+  }
