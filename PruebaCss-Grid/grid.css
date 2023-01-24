@@ -165,6 +165,7 @@ img {
   grid-column: span 3;
 }
 
+/*Grid con capas ubicando con linias*/
 .grid-layers {
   display: grid;
   /*Grid de 4CX4R*/
@@ -196,6 +197,37 @@ img {
   grid-column: 2/4;
   grid-row: 2/4;
 }
+/*Grid con capas ubicando con linias*/
+
+/*Default es 0, valores nagativos y pasitivos*/
+.grid-order{
+  display: grid;
+  /*Grid de 3CX2R*/
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.grid-order .item:nth-child(1){
+  background-color:  red;
+  order: 1;
+}
+.grid-order .item:nth-child(2){
+  background-color:  purple;
+}
+.grid-order .item:nth-child(3){
+  background-color:  blue;
+}
+.grid-order .item:nth-child(4){
+  background-color:  orange;
+}
+.grid-order .item:nth-child(5){
+  background-color:  palevioletred;
+}
+/*Default es 0, valores nagativos y pasitivos*/
+
+
+
+
+
 
 
 
