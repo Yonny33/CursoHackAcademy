@@ -207,7 +207,13 @@ img {
   grid-template-rows: repeat(2, 1fr);
 }
 .grid-order .item:nth-child(1) {
-  background-color: red;
+  background-color: #fbda61;
+  background-image: linear-gradient(
+    45deg,
+    #fbda61 0%,
+    #ff5acd 54%,
+    #ffffff 93%
+  );
   order: 1;
 }
 .grid-order .item:nth-child(2) {
@@ -231,19 +237,45 @@ img {
   grid-template-columns: repeat(3, 200px);
   grid-template-rows: repeat(2, 200px);
 }
-  .grid-align .item:nth-child(1) {
-    background-color: yellow;
-  }
+.grid-align .item:nth-child(1) {
+  background-color: yellow;
+}
 
-  .grid-align .item:nth-child(2) {
-    background-color: red;
-  }
-  .grid-align .item:nth-child(3) {
-    background-color: blue;
-  }
-  .grid-align .item:nth-child(4) {
-    background-color: orange;
-  }
-  .grid-align .item:nth-child(5) {
-    background-color: palevioletred;
-  }
+.grid-align .item:nth-child(2) {
+  background-color: red;
+}
+.grid-align .item:nth-child(3) {
+  background-color: blue;
+}
+.grid-align .item:nth-child(4) {
+  background-color: orange;
+}
+.grid-align .item:nth-child(5) {
+  background-color: #fbda61;
+  background-image: linear-gradient(
+    45deg,
+    #fbda61 0%,
+    #ff5acd 54%,
+    #ffffff 93%
+  );
+}
+
+.grid-align-tracks {
+  display: grid;
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(2, 200px);
+  /*justify-content alinia los tracks en el eje horinzontal (X)*/
+  justify-content: start;
+  justify-content: end;
+  justify-content: center;
+  justify-content: space-between;
+  justify-content: space-around;
+  justify-content: space-evenly;
+  /*align-content alinia los tracks en el eje vertical (Y)*/
+  align-content: start;
+  align-content: end;
+  align-content: center;
+  align-content: space-between;
+  align-content: space-around;
+  align-content: space-evenly;
+}
